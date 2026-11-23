@@ -1,0 +1,15 @@
+.git
+.DS_Store
+Thumbs.db
+
+# Frontend dependencies & build artifacts
+frontend/node_modules
+frontend/dist
+frontend/.test-build
+frontend/*.log
+
+# Backend build artifacts & binaries
+backend/calculator-api
+backend/calculator-api.exe
+backend/*.test
+backend/*.out

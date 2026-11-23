@@ -1,0 +1,13 @@
+services:
+  frontend:
+    build:
+      context: .
+      target: frontend-runtime
+    ports:
+      - "127.0.0.1:3000:80"
+
+  backend:
+    build:
+      context: .
+      target: backend-runtime
+    network_mode: "service:frontend"
